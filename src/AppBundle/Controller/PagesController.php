@@ -15,4 +15,12 @@ class PagesController extends Controller
     {
         return $this->render('app/index.html.twig');
     }
+
+    /**
+     * @Route("/mentions-legales", name="legal")
+     */
+    public function legalAction()
+    {
+        return $this->render('app/legal.html.twig');
+    }
 }
